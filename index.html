@@ -5,18 +5,116 @@
     <title>HTML Academy: Глейси</title>
   </head>
   <body>
-  	<header class="main-header">
-	  	<nav class="main-nav">
-	  		<ul class=nav-site>
-  				<a class="main-heder-logo" href="#"><img src="img/"></a>
-	  			<li>Каталог</li>
-	  			<li>Доставка  оплата</li>
-	  			<li>О комп</li>
-	  		</ul>
-	  	</nav>
-	</header>
+
+<!-- навигация по сайту -->
+    <header class="main-header">
+      <nav class="main-header-nav">
+        <a href="#"><img src="img/main-logo.png" alt="Логотип Глуйси" width="154" height="64"></a>
+        <ul class="cite-nav">
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="shipping-and-payment.html">Доставка и оплата</a></li>
+          <li><a href="about-us.html">О Компании</a></li>
+        </ul>
+        <ul class="users-nav">
+          <li class="search"><a>Поиск</a></li>
+          <li class="user-iner">Вход<a></a></li>
+          <li class="cart"><a>Корзина</a></li>
+          <p class="time-work">С 10 до 20, ежедневно</p>
+            <span class"tel">8 812 450-25-25</span>          
+        </ul>
+<!-- Пока не знаю точно как прописть слайдер -->
+        <section class="slide-1">
+          <img src="img/ice-cream-1-2.png" alt="Крембрюле и пломбир с малиновым джемом">
+          <h2 class="promo-1">Крем-брюле и пломбир
+              с малиновым джемом</h2>
+          <span class="button">Давайте оба!</span>
+        </section>
+        <!-- <section class="slide-2">
+            <img src="#" alt="!!!!!!!">
+            <h2 class="promo-1">#####</h2>
+            <span class="button">Давайте оба!</span>
+          </section>
+          <section class="slide-3">
+              <img src="#" alt="!!!!!!!!!!!!!!">
+              <h2 class="promo-1">####</h2>
+              <span class="button">Давайте оба!</span>
+            </section> -->
+      </nav>
+    </header>
 
 
+    <main class="main-content">
+
+      <h1 class="visually-hidden">Главная страница Gllecy</h1>
+<!-- Секция с промо -->
+      <section class="main-promo-1">
+        <h2 class="#">Малинка даром!</h2>
+        <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+        <span class="button">Хочу варенье!</span>
+      </section>
+      <section class="main-promo-2">
+        <h2 class="#">Шоколадки даром!</h2>
+        <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки  совершенно бесплатно.</p>
+        <span class="button">Хочу шоколадки!
+        </span>
+      </section>
+<!-- Хиты продаж -->
+      <section class="promo-hits"> <!-- прописываю хиты продаж, сомневаюсь насчет тега aside -->
+        <aside class="hit-1">
+          <a href="catalog.html"><img src="img/hit-1.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой
+            " width="200" height="200"></a>
+            <p class="pricing"><span class="price">310</span><span class="gravity">/кг</span></p>
+            <p><a href="catalog.html">Сливочное с апельсиновым джемом и цитрусовой стружкой
+            </a></p>
+        </aside>
+        <aside class="hit-2">
+          <a href="catalog.html"><img src="img/hit-2.png" alt="Сливочно-кофейное с кусочками шоколада" width="200" height="200"></a>
+            <p class="pricing"><span class="price">380</span><span class="gravity">/кг</span></p>
+            <p><a href="catalog.html">Сливочно-кофейное с кусочками шоколада</a></p>
+        </aside>
+        <aside class="hit-3">
+          <a href="catalog.html"><img src="img/hit-3.png" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="200" height="200"></a>
+            <p class="pricing"><span class="price">355</span><span class="gravity">/кг</span></p>
+            <p><a href="catalog.html">Сливочно-клубничное с присыпкой из белого шоколада</a></p>
+        </aside>
+        <aside class="hit-4">
+          <a href="catalog.html"><img src="img/hit-4.png" alt="Сливочное крем-брюле с карамельной подливкой" width="200" height="200"></a>
+            <p class="pricing"><span class="price">415</span><span class="gravity">/кг</span></p>
+            <p><a href="catalog.html">Сливочное крем-брюле с карамельной подливкой</a></p>
+        </aside>
+      </section>
+<!-- Описание преимуществ -->
+      <section class="main-about-us">
+        <h2>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
+        <aside class="about-us-1">
+            <p class="all-ice-cream">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+            <p class="how-we-cook">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+        </aside>
+        <aside class="about-us-2">
+            <p class="from-what-we-cook">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+            <p class="ice-cream-delivery">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+        </aside>    
+      </section>
+<!-- блог и форма подписки на рассылку -->
+<!-- про блог -->
+      <section class="main-blog">
+        <aside class="blog">
+          <p class="blog-item">Новое в нашем блоге</p>
+          <p><a href="#">10 способов сервировки
+              фруктовых щербетов к
+              столу</a></p>
+        </aside>
+<!-- форма для почты -->
+        <aside class="subscribe">
+          <p class="subscride-item">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
+          <form class="subscribe-form">
+            <input type="email" id="email" name="email" value="электронная почта">
+            <button class="button" type="button">Отправить</button>
+          </form>
+        </aside>
+      </section>
+
+    </main>
 
 
 
