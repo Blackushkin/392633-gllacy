@@ -1,150 +1,254 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Глейси</title>
-  </head>
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Глейси</title>
+  <link rel="stylesheet" href="css/style.css" </head>
+
   <body>
 
-<!-- навигация по сайту -->
+    <!-- навигация по сайту -->
     <header class="main-header">
+
       <nav class="main-header-nav">
-        <a href="#"><img src="img/main-logo.png" alt="Логотип Глуйси" width="154" height="64"></a>
+
+        <a href="#">
+          <img src="img/main-logo.png" alt="Логотип Глуйси" width="154" height="64">
+        </a>
+
         <ul class="cite-nav">
-          <li><a href="catalog.html">Каталог</a></li>
-          <li><a href="shipping-and-payment.html">Доставка и оплата</a></li>
-          <li><a href="about-us.html">О Компании</a></li>
+          <li>
+            <a href="catalog.html">Каталог</a>
+          </li>
+          <li>
+            <a href="shipping-and-payment.html">Доставка и оплата</a>
+          </li>
+          <li>
+            <a href="about-us.html">О Компании</a>
+          </li>
         </ul>
+
         <ul class="users-nav">
-          <li class="search"><a>Поиск</a></li>
-          <li class="user-iner">Вход<a></a></li>
-          <li class="cart"><a>Корзина</a></li>                    
+          <li class="search">
+            <a href="">Поиск</a>
+          </li>
+          <li class="user-iner">
+            <a href="">Вход</a>
+          </li>
+          <li class="cart">
+            <a href="">Корзина</a>
+          </li>
         </ul>
+
         <p class="time-work">С 10 до 20, ежедневно</p>
-            <span class="tel">8 812 450-25-25</span>
-<!-- Пока не знаю точно как прописть слайдер -->
-        <section class="slide-1">
-          <img src="img/ice-cream-1-2.png" alt="Крембрюле и пломбир с малиновым джемом">
-          <h2 class="promo-1">Крем-брюле и пломбир
-              с малиновым джемом</h2>
-          <span class="button">Давайте оба!</span>
-        </section>
-        <!-- <section class="slide-2">
-            <img src="#" alt="!!!!!!!">
-            <h2 class="promo-1">#####</h2>
+        <span class="tel">8 812 450-25-25</span>
+
+        <!-- Пока не знаю точно как прописть слайдер -->
+        <section class=slider>
+
+          <article class="slide-1">
+            <img src="img/ice-cream-1-2.png" alt="Крембрюле и пломбир с малиновым джемом" width="" height="">
+            <h2 class="promo-1">Крем-брюле и пломбир с малиновым джемом</h2>
             <span class="button">Давайте оба!</span>
-          </section>
-          <section class="slide-3">
-              <img src="#" alt="!!!!!!!!!!!!!!">
-              <h2 class="promo-1">####</h2>
+          </article>
+
+          <!-- <article class="slide-2">
+              <img src="#" alt="!!!!!!!">
+              <h2 class="promo-1">#####</h2>
               <span class="button">Давайте оба!</span>
-            </section> -->
+            </article>
+            <article class="slide-3">
+                <img src="#" alt="!!!!!!!!!!!!!!">
+                <h2 class="promo-1">####</h2>
+                <span class="button">Давайте оба!</span>
+              </article> -->
+        </section>
       </nav>
     </header>
 
 
     <main class="main-content">
 
-      <h1 class="visually-hidden">Главная страница Gllecy</h1>
-<!-- Секция с промо -->
-      <section class="main-promo-1">
-        <h2 class="#">Малинка даром!</h2>
-        <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-        <span class="button">Хочу варенье!</span>
+      <section class="promo">
+        <h1 class="visually-hidden">Главная страница Gllecy</h1>
+        <!-- Секция с промо -->
+        <article class="main-promo-1">
+          <h2 class="#">Малинка даром!</h2>
+          <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+          <span class="button">Хочу варенье!</span>
+        </article>
+
+        <article class="main-promo-2">
+          <h2 class="#">Шоколадки даром!</h2>
+          <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+          <span class="button">Хочу шоколадки!
+          </span>
+        </article>
       </section>
-      <section class="main-promo-2">
-        <h2 class="#">Шоколадки даром!</h2>
-        <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки  совершенно бесплатно.</p>
-        <span class="button">Хочу шоколадки!
-        </span>
+
+      <!-- Хиты продаж -->
+      <section class="promo-hits">
+        <!-- прописываю хиты продаж, сомневаюсь насчет тега aside -->
+        <article class="hit-1">
+          <a href="catalog.html">
+            <img src="img/hit-1.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой
+            " width="200" height="200">
+          </a>
+          <p class="pricing">
+            <span class="price">310</span>
+            <span class="gravity">/кг</span>
+          </p>
+          <p>
+            <a href="catalog.html">Сливочное с апельсиновым джемом и цитрусовой стружкой
+            </a>
+          </p>
+        </article>
+
+        <article class="hit-2">
+          <a href="catalog.html">
+            <img src="img/hit-2.png" alt="Сливочно-кофейное с кусочками шоколада" width="200" height="200">
+          </a>
+          <p class="pricing">
+            <span class="price">380</span>
+            <span class="gravity">/кг</span>
+          </p>
+          <p>
+            <a href="catalog.html">Сливочно-кофейное с кусочками шоколада</a>
+          </p>
+        </article>
+
+        <article class="hit-3">
+          <a href="catalog.html">
+            <img src="img/hit-3.png" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="200" height="200">
+          </a>
+          <p class="pricing">
+            <span class="price">355</span>
+            <span class="gravity">/кг</span>
+          </p>
+          <p>
+            <a href="catalog.html">Сливочно-клубничное с присыпкой из белого шоколада</a>
+          </p>
+        </article>
+
+        <article class="hit-4">
+          <a href="catalog.html">
+            <img src="img/hit-4.png" alt="Сливочное крем-брюле с карамельной подливкой" width="200" height="200">
+          </a>
+          <p class="pricing">
+            <span class="price">415</span>
+            <span class="gravity">/кг</span>
+          </p>
+          <p>
+            <a href="catalog.html">Сливочное крем-брюле с карамельной подливкой</a>
+          </p>
+        </article>
+
       </section>
-<!-- Хиты продаж -->
-      <section class="promo-hits"> <!-- прописываю хиты продаж, сомневаюсь насчет тега aside -->
-        <aside class="hit-1">
-          <a href="catalog.html"><img src="img/hit-1.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой
-            " width="200" height="200"></a>
-            <p class="pricing"><span class="price">310</span><span class="gravity">/кг</span></p>
-            <p><a href="catalog.html">Сливочное с апельсиновым джемом и цитрусовой стружкой
-            </a></p>
-        </aside>
-        <aside class="hit-2">
-          <a href="catalog.html"><img src="img/hit-2.png" alt="Сливочно-кофейное с кусочками шоколада" width="200" height="200"></a>
-            <p class="pricing"><span class="price">380</span><span class="gravity">/кг</span></p>
-            <p><a href="catalog.html">Сливочно-кофейное с кусочками шоколада</a></p>
-        </aside>
-        <aside class="hit-3">
-          <a href="catalog.html"><img src="img/hit-3.png" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="200" height="200"></a>
-            <p class="pricing"><span class="price">355</span><span class="gravity">/кг</span></p>
-            <p><a href="catalog.html">Сливочно-клубничное с присыпкой из белого шоколада</a></p>
-        </aside>
-        <aside class="hit-4">
-          <a href="catalog.html"><img src="img/hit-4.png" alt="Сливочное крем-брюле с карамельной подливкой" width="200" height="200"></a>
-            <p class="pricing"><span class="price">415</span><span class="gravity">/кг</span></p>
-            <p><a href="catalog.html">Сливочное крем-брюле с карамельной подливкой</a></p>
-        </aside>
-      </section>
-<!-- Описание преимуществ -->
+      <!-- Описание преимуществ -->
       <section class="main-about-us">
+
         <h2>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
-        <aside class="about-us-1">
-            <p class="all-ice-cream">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
-            <p class="how-we-cook">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
-        </aside>
-        <aside class="about-us-2">
-            <p class="from-what-we-cook">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
-            <p class="ice-cream-delivery">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
-        </aside>    
+
+        <article class="about-us-1">
+          <p class="all-ice-cream">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных
+            временем технологий.</p>
+          <p class="how-we-cook">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты
+            и добавки произведены из натурального, экологически чистого сырья.</p>
+        </article>
+
+        <article class="about-us-2">
+          <p class="from-what-we-cook">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает
+            долговременное сотрудничество.</p>
+          <p class="ice-cream-delivery">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять
+            в пути и позволяет сохранить превосходный вкус.</p>
+        </article>
+
       </section>
-<!-- блог и форма подписки на рассылку -->
-<!-- про блог -->
+      <!-- блог и форма подписки на рассылку -->
+      <!-- про блог -->
       <section class="main-blog">
-        <aside class="blog">
+
+        <article class="blog">
           <p class="blog-item">Новое в нашем блоге</p>
-          <p><a href="#">10 способов сервировки
-              фруктовых щербетов к
-              столу</a></p>
-        </aside>
-<!-- форма для почты -->
-        <aside class="subscribe">
-          <p class="subscride-item">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
-          <form class="subscribe-form">
+          <p>
+            <a href="#">10 способов сервировки фруктовых щербетов к столу
+            </a>
+          </p>
+        </article>
+
+        <!-- форма для почты -->
+        <article class="subscribe">
+          <p class="subscride-item">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем
+            не спамить и не слать всякой ненужной ерунды. Честно =) </p>
+          <form class="subscribe-form" method="" action="">
             <input type="email" id="email" name="email" value="электронная почта">
             <button class="button" type="button">Отправить</button>
           </form>
-        </aside>
+        </article>
+
       </section>
     </main>
-<!-- футер -->
+    <!-- футер -->
     <footer class="main-footer">
       <!-- карта -->
       <section class="main-map">
-        <a href="#"><img src="img/map.png" alt="как до на добраться" width="1050" height="430"></a>
-        <span class="map-geo"><img src="img/map-geo.png" alt="ice-cream-logo" width="80" height="140"></span>
+        <a href="#">
+          <img src="img/map.png" alt="как до на добраться" width="1050" height="430">
+        </a>
+        <span class="map-geo">
+          <img src="img/map-geo.png" alt="ice-cream-logo" width="80" height="140">
+        </span>
+
         <aside class="address">
-          <p>Адрес главного офиса<br>и офлайн-магазина:</p><!--классы выставлю позже -->
-          <p>ул. Большая Конюшенная<br>19/8, Санкт-Петербург</p>
-          <p>Для заказов по телефону:</p>
-          <p>8 812 450-25-25<br>(с 10 до 20 ежедневно)</p>
-            <span><a href="#">Форма обратной связи</a></span>
+          <p class="store-address">Адрес главного офиса
+            <br>и офлайн-магазина:</p>
+          <!--классы выставлю позже -->
+          <p class="street">ул. Большая Конюшенная
+            <br>19/8, Санкт-Петербург</p>
+          <p class="for-orders">Для заказов по телефону:</p>
+          <p class="phone-number">8 812 450-25-25
+            <br>(с 10 до 20 ежедневно)</p>
+          <span class="button">
+            <a href="#">Форма обратной связи</a>
+          </span>
         </aside>
+        
       </section>
-<!-- соц. сети -->
+      <!-- соц. сети -->
       <ul class="social">
-        <li><a href="#">телеграм</a></li>
-        <li><a href="#">инстаграм</a></li>
-        <li><a href="#">фейсбук</a></li>
-        <li><a href="#">вконтакте</a></li>
+          <li><a class"social-telegram" href="#">telegram</a></li>
+
+          <li><a class"social-instagram" href="#">instagram</a></li>
+
+          <li><a class"social-facebook" href="#">facebook</a></li>
+
+          <li><a class"social-Vkontakte" href="#">Vkontakte</a></li>
       </ul>
-<!-- для поставщиков и т.д. -->
-      <section class="footer-nav">
-        <p class="for-suppliers"><a href="#">Для поставщиков</a></p>
-        <p><a href="#">Наши документы</a></p>
-        <p><a href="#">О производстве</a></p>
-        <p><a href="#">Экологические стандарты</a></p>
-      </section>
-<!-- копирайт -->
-      <span class=""><img src="img/logo-htmlacademy-small.png" alt="logo-htmlacademy-small" width="108" height="39"></span>
-      <p>Сделано в <a href="#">HTML Academy</a> © 2017</p>      
-        </footer>
+      <!-- для поставщиков и т.д. -->
+      <ul class="footer-nav">
+          <li class="for-suppliers">
+              <a href="#">Для поставщиков</a>
+          </li>
+      
+          <li>
+              <a href="#">Наши документы</a>
+          </li>
+      
+          <li>
+              <a href="#">О производстве</a>
+          </li>
+      
+          <li>
+              <a href="#">Экологические стандарты</a>
+          </li>
+      </ul>
+      <!-- копирайт -->
+      <span class="copyright">
+          <img src="img/logo-htmlacademy-small.png" alt="logo-htmlacademy-small" width="108" height="39">
+      </span>
+      <p>Сделано в <a href="#">HTML Academy</a> © 2017</p>
+    </footer>
   </body>
+
 </html>
