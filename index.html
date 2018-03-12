@@ -10,16 +10,16 @@
 <body>
 
   <!-- навигация по сайту -->
-  <header class="main-header">
+  <header class="header">
 
     <a href="#">
-      <img src="img/min_svg/logo.svg" alt="Логотип Глуйси" width="154" height="64">
+      <img src="img/min_svg/logo.svg" alt="Логотип Gllacy" width="154" height="64">
     </a>
-    <nav class="main-header__nav">
-      <ul class="nav__main-navigation">
+    <nav class="header__nav">
+      <ul class="nav__chapter-nav">
         <li>
           <a href="catalog.html">Каталог</a>
-          <ul class="nav__main-navigation nav__main-navigation--dropdown">
+          <ul class="nav__chapter-nav nav__chapter-nav--dropdown">
             <li>
               <a href="#">Новинки</a>
             </li>
@@ -45,75 +45,77 @@
         </li>
       </ul>
 
-      <ul class="main-header__users-nav">
+      <ul class="header__users-nav">
         <li class="search">
           <a href="#">Поиск</a>
         </li>
-        <li class="main-header__user-inner">
+        <li class="header__user-inner">
           <a href="#">Вход</a>
         </li>
-        <li class="main-header__cart">
+        <li class="header__cart">
           <a href="#">Корзина</a>
         </li>
       </ul>
     </nav>
 
-    <aside class="main-header__working-hours">
+    <aside class="header__working-hours">
       <p class="time-work">С 10 до 20, ежедневно</p>
       <a href="tel:88124502525">8 812 450-25-25</a>
     </aside>
   </header>
 
-  <!-- Пока не знаю точно как прописть слайдер -->
   <section class=slider>
-
+    <h3 class="visuali-hidden">Наши акции</h3>
     <article class="slider__slide-1">
       <img src="img/min_img/creme_brulee_and_raspberry_ice_cream.png" alt="Крембрюле и пломбир с малиновым джемом">
-      <h2 class="promo-1">Крем-брюле и пломбир с малиновым джемом</h2>
-      <span class="button">Давайте оба!</span>
+      <h2 class="promo">Крем-брюле и пломбир с малиновым джемом</h2>
+      <a href="#" class="button">Давайте оба!</a>
     </article>
 
-    <!-- <article class="slide-2">
-                <img src="#" alt="!!!!!!!">
-                <h2 class="promo-1">#####</h2>
-                <span class="button">Давайте оба!</span>
-              </article>
-              <article class="slide-3">
-                  <img src="#" alt="!!!!!!!!!!!!!!">
-                  <h2 class="promo-1">####</h2>
-                  <span class="button">Давайте оба!</span>
-                </article> -->
+    <!-- отредактировать позже! -->
+    <h3 class="visuali-hidden">Наши акции</h3>
+    <article class="slider__slide-2">
+      <img src="img/min_img/creme_brulee_and_raspberry_ice_cream.png" alt="Крембрюле и пломбир с малиновым джемом">
+      <h2 class="promo">Крем-брюле и пломбир с малиновым джемом</h2>
+      <a href="#" class="button">Давайте оба!</a>
+    </article>
+
+
+    <h3 class="visuali-hidden">Наши акции</h3>
+    <article class="slider__slide-3">
+      <img src="img/min_img/creme_brulee_and_raspberry_ice_cream.png" alt="Крембрюле и пломбир с малиновым джемом">
+      <h2 class="promo">Крем-брюле и пломбир с малиновым джемом</h2>
+      <a href="#" class="button">Давайте оба!</a>
+    </article>
+
+
   </section>
 
+  <main class="content">
 
-  <main class="main-content">
-
-    <section class="main-content__main-promo">
-      <h1 class="visually-hidden">Главная страница Gllacy</h1>
+    <section class="content__promo">
+      <h1 class="visually-hidden">Подарки нашим покупателям</h1>
       <!-- Секция с промо -->
-      <article class="main-promo__raspberries">
-        <h2 class="main-promo-raspberries-item">Малинка даром!</h2>
+      <article class="promo__raspberries">
+        <h2 class="promo-raspberries-item">Малинка даром!</h2>
         <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-        <span class="button">Хочу варенье!</span>
+        <a href="#" class="button">Хочу варенье!</a>
       </article>
 
-      <article class="main-promo__chocolate">
-        <h2 class="main-promo-chocolate-item">Шоколадки даром!</h2>
+      <article class="promo__chocolate">
+        <h2 class="promo-chocolate-item">Шоколадки даром!</h2>
         <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-        <span class="button">Хочу шоколадки!
-        </span>
+        <a href="#" class="button">Хочу шоколадки!</a>
       </article>
     </section>
 
     <!-- Хиты продаж -->
-    <section class="main-promo__hits">
+    <section class="promo__hits">
       <h2 class="visuali-hidden">Хиты продаж нашего магазина!</h2>
 
       <article class="hits__hit-item">
-        <a href="catalog.html">
-          <img src="img/min_img/cream_with_orange_catalog.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой
+        <img src="img/min_img/cream_with_orange_catalog.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой
             " width="200" height="200">
-        </a>
         <p class="hit-item__pricing">
           <span class="pricing__price">310</span>
           /кг
@@ -125,10 +127,8 @@
       </article>
 
       <article class="hits__hit-item">
-        <a href="catalog.html">
-          <img src="img/min_img/creamy_coffee_with_chocolate_catalog.jpg" alt="Сливочно-кофейное с кусочками шоколада" width="200"
-            height="200">
-        </a>
+        <img src="img/min_img/creamy_coffee_with_chocolate_catalog.jpg" alt="Сливочно-кофейное с кусочками шоколада" width="200"
+          height="200">
         <p class="hit-item__pricing">
           <span class="pricing__price">380</span>
           /кг
@@ -139,10 +139,8 @@
       </article>
 
       <article class="hits__hit-item">
-        <a href="catalog.html">
-          <img src="img/min_img/strawberry_with_white_chocolate_catalog.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада"
-            width="200" height="200">
-        </a>
+        <img src="img/min_img/strawberry_with_white_chocolate_catalog.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада"
+          width="200" height="200">
         <p class="hit-item__pricing">
           <span class="pricing__price">355</span>
           /кг
@@ -153,10 +151,8 @@
       </article>
 
       <article class="hits__hit-item">
-        <a href="catalog.html">
-          <img src="img/min_img/cream_brulee_with_caramel_catalog.png" alt="Сливочное крем-брюле с карамельной подливкой" width="200"
-            height="200">
-        </a>
+        <img src="img/min_img/cream_brulee_with_caramel_catalog.png" alt="Сливочное крем-брюле с карамельной подливкой" width="200"
+          height="200">
         <p class="hit-item__pricing">
           <span class="pricing__price">415</span>
           /кг
@@ -165,10 +161,10 @@
           <a href="catalog.html">Сливочное крем-брюле с карамельной подливкой</a>
         </p>
       </article>
-
     </section>
+
     <!-- Описание преимуществ -->
-    <section class="main-content__main-about-us">
+    <section class="content__about-us">
 
       <h2>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
 
@@ -186,25 +182,27 @@
         <p class="item__ice-cream-delivery">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять
           в пути и позволяет сохранить превосходный вкус.</p>
       </article>
-
     </section>
-    <!-- блог и форма подписки на рассылку -->
-    <section class="main-blog">
 
-      <article class="main-blog__blog-item">
-        <p class="blog">Новое в нашем блоге</p>
+    <!-- блог и форма подписки на рассылку -->
+    <section class="blog">
+      <article class="blog__blog-item">
+        <p class="blog__content-new">Новое в нашем блоге</p>
         <p>
-          <a href="#">10 способов сервировки фруктовых щербетов к столу
-          </a>
+          <p class="blog__content-paper">
+            <a href="#">10 способов сервировки фруктовых щербетов к столу
+            </a>
+          </p>
         </p>
       </article>
 
       <!-- форма для почты -->
-      <article class="main-blog__blog-item">
+      <article class="blog__blog-item">
         <p class="subscride">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем
           не спамить и не слать всякой ненужной ерунды. Честно =) </p>
-        <form class="subscribe-form" method="" action="">
 
+        <form class="subscribe-form" method="" action="">
+          <label for="email">Электронная почта</label>
           <input type="email" id="email" name="email" value="электронная почта">
           <button class="button" type="button">Отправить</button>
         </form>
@@ -212,51 +210,49 @@
 
     </section>
     <!-- карта -->
-    <section class="main-map">
+    <section class="map">
       <a href="#">
-        <img src="img/min_img/map.jpg" alt="как до на добраться" width="1050" height="430">
+        <img src="img/min_img/map.jpg" alt="ул. Большая Конюшенная 19/8, Санкт-Петербург" width="1050" height="430">
       </a>
-      <span class="main-map__geo">
+      <span class="map__geo">
         <img src="img/min_svg/icon_of_big_ice_cream.svg" alt="ice-cream-logo" width="80" height="140">
       </span>
 
-      <aside class="main-map__address">
-        <p class="main-map__address--store-address">Адрес главного офиса и офлайн-магазина:</p>
-        <p class="main-map__address--street">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
-        <p class="main-map__address--for-orders">Для заказов по телефону:</p>
-        <p class="main-map__address--phone-number">8 812 450-25-25 (с 10 до 20 ежедневно)</p>
+      <aside class="map__address">
+        <p class="map__address-store-address">Адрес главного офиса и офлайн-магазина:</p>
+        <p class="map__address-street">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
+        <p class="map__address-for-orders">Для заказов по телефону:</p>
+        <p class="map__address-phone-number">8 812 450-25-25 (с 10 до 20 ежедневно)</p>
         <span class="button">
           <a href="#">Форма обратной связи</a>
         </span>
       </aside>
-
     </section>
-
   </main>
 
   <!-- футер -->
-  <footer class="main-footer">
+  <footer class="footer">
 
     <!-- соц. сети -->
-    <ul class="main-footer__social">
+    <ul class="footer__social">
       <li>
-        <a class="main-footer__social--social-telegram" href="#">telegram</a>
+        <a class="footer__social social-telegram" href="#">telegram</a>
       </li>
 
       <li>
-        <a class="main-footer__social--social-instagram" href="#">instagram</a>
+        <a class="footer__social social-instagram" href="#">instagram</a>
       </li>
 
       <li>
-        <a class="main-footer__social--social-facebook" href="#">facebook</a>
+        <a class="footer__social social-facebook" href="#">facebook</a>
       </li>
 
       <li>
-        <a class="main-footer__social--social-Vkontakte" href="#">Vkontakte</a>
+        <a class="footer__social social-Vkontakte" href="#">Vkontakte</a>
       </li>
     </ul>
     <!-- для поставщиков и т.д. -->
-    <article class="main-footer__nav">
+    <article class="footer__nav">
       <ul class="footer-nav__suppliers">
         <li class="footer-nav__suppliers--for-suppliers">
           <a href="#">Для поставщиков</a>
@@ -286,15 +282,22 @@
 
   <!-- всплывающие формы -->
   <section class="search-form-popup visually-hidden">
+    <!--скорее display:none; -->
     <form method="" action="">
       <input type="search" maxlength="30" value="Что ищем?">
     </form>
   </section>
 
   <section class="user-inner-form-popup visually-hidden">
+    <!--скорее display:none; -->
     <form method="" action="">
-      <input type="email" value="Электронная почта">
+
+      <label for="email"></label>
+      <input type="email" value="Электронная почта" id="email">
+
+      <label for="password"></label>
       <input type="password" value="пароль">
+
       <button class="button" type="submit">Войти</button>
     </form>
     <p>
