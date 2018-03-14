@@ -9,6 +9,18 @@ body {
   font-weight: 700;
   line-height: 22px;
 
+  margin:0;
+  padding:0;
+
+}
+
+a {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+ul {
+	list-style: none;
 }
 
 h2 {
@@ -28,6 +40,50 @@ h2 {
   overflow: hidden;
 }
 
+.button {
+	background-color:#f16844;
+	box-shadow: 0 2px 2px;
+	color: #ffffff;
+	border-radius: 20px;
+
+	font-size: 18px;
+	line-height: 24px;
+	padding:10px;
+}
+
+button {
+	font: inherit;
+	background-color:linear-gradient(to top, #e74a35 0%, #f26843 100%);
+	border:none;
+}
+
+	.promo__raspberries {
+		background-color: #740006;
+		background-image: url("../img/min_img/crimson-background.jpg");
+		background-repeat: no-repeat;
+		background-position: center;
+
+		max-width: 500px;
+		max-height: 250px;
+	}
+
+
+	.promo__chocolate {
+		background-color: #392115;
+		background-image: url("../img/min_img/background_chocolate.jpg");
+		background-repeat: no-repeat;
+		background-position: center;
+
+		max-width: 500px;
+		max-height: 2500px;
+
+	}
+
+.content__about-us{
+	background-color: #e4d2a8;
+	background-image: url("../img/min_img/background_wafers.png");
+	color: #323232;
+}
 
 /*страница каталога*/
 
