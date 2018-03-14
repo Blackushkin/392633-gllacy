@@ -16,10 +16,10 @@
       <img src="img/min_svg/logo.svg" alt="Логотип Gllacy" width="154" height="64">
     </a>
     <nav class="header__nav">
-      <ul class="nav__chapter-nav">
+      <ul class="nav__chapter-nav" aria-label="Главная навигация по сайту">
         <li>
           <a href="catalog.html" tabindex="0">Каталог</a>
-          <ul class="nav__chapter-nav nav__chapter-nav--dropdown">
+          <ul class="nav__chapter-nav nav__chapter-nav--dropdown" aria-haspopup="true" role="menu">
             <li>
               <a href="#" tabindex="0">Новинки</a>
             </li>
@@ -201,7 +201,7 @@
         <p class="subscride">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем
           не спамить и не слать всякой ненужной ерунды. Честно =) </p>
 
-        <form class="subscribe-form" method="" action="">
+        <form class="subscribe-form" method="post" action="https://echo.htmlacademy.ru">
           <label for="email">Электронная почта</label>
           <input type="email" id="email" name="email" value="электронная почта" tabindex="0">
           <button class="button" type="button" tabindex="0">Отправить</button>
@@ -212,7 +212,7 @@
     <!-- карта -->
     <section class="map">
       <a href="#" tabindex="0">
-        <img src="img/min_img/map.jpg" alt="ул. Большая Конюшенная 19/8, Санкт-Петербург" width="1050" height="430">
+        <img src="img/min_img/map.jpg" alt="Адрес нашего офиса ул. Большая Конюшенная 19/8, Санкт-Петербург" width="1050" height="430">
       </a>
       <span class="map__geo">
         <img src="img/min_svg/icon_of_big_ice_cream.svg" alt="ice-cream-logo" width="80" height="140">
@@ -274,31 +274,31 @@
     </article>
     <!-- копирайт -->
     <span class="footer-nav__copyright">
-      <img src="img/min_svg/logo-htmlacademy-small.svg" alt="logo-htmlacademy-small" width="108" height="39">
+      <img src="img/min_svg/logo-htmlacademy-small.svg" alt="Логотип HTML Academy" width="108" height="39">
     </span>
     <p>Сделано в
       <a href="#" tabindex="0">HTML Academy</a> © 2017</p>
   </footer>
 
-  <!-- всплывающие формы -->
-  <section class="search-form-popup visually-hidden">
-    <!--скорее display:none; -->
-    <form method="" action="">
-      <input type="search" maxlength="30" value="Что ищем?" tabindex="0">
+  <!-- ВСПЛЫВАЮЩИЕ ОКНА (попапы) -->
+  <!-- форма поиска по сайту -->
+  <article class="search-form-popup visually-hidden">
+    <form method="post" action="https://echo.htmlacademy.ru">
+      <label for="site-search" class="visuali-hidden">Форма поиска по сайту</label>
+      <input type="search" name="site-search" id="site-search" maxlength="30" value="Что ищем?" tabindex="0">
     </form>
-  </section>
+  </article>
 
-  <section class="user-inner-form-popup visually-hidden">
-    <!--скорее display:none; -->
-    <form method="" action="">
-
-      <label for="email"></label>
-      <input type="email" value="Электронная почта" id="email" tabindex="0">
-
-      <label for="password"></label>
-      <input type="password" value="пароль" tabindex="0">
-
-      <button class="button" type="submit" tabindex="0">Войти</button>
+  <!-- форма для регистрации -->
+  <article class="user-inner-form-popup visually-hidden">
+    <form method="post" action="https://echo.htmlacademy.ru" aria-label="
+    Форма для регистрации">
+      <fieldset class="user-inner-form__item">
+        <label for="email" class="visuali-hidden">Введите свой email</label>
+        <input type="email" value="Электронная почта" id="email" tabindex="0">
+        <label for="password" class="visuali-hidden">Введите свой пароль</label>
+        <input type="password" value="пароль" tabindex="0">
+        <button class="button" type="submit" tabindex="0">Войти</button>
     </form>
     <p>
       <a href="#" tabindex="0">Зыбыли пароль?</a>
@@ -306,7 +306,24 @@
     <p>
       <a href="#" tabindex="0">Новая регистрация</a>
     </p>
-  </section>
+    </fieldset>
+  </article>
+
+  <!-- Форма обратной связи -->
+  <article class=" feedback-form">
+  	<form method="post" action="https://echo.htmlacademy.ru">
+    <fieldset class="fidbeck-form__item">
+      <h2 class="fidbeck-form__title">Мы обязательно вам ответим!</h2>
+      <label for="fidback-form__name" class="visuali-hidden">Введите свое имя</label>
+      <input type="text" name="fidback-form__name" id="fidback-form__name" placeholder="Как вас зовут?" aria-label="Введите свое имя" tabindex="0">
+      <label for="fidback-form__email"></label>
+      <input type="email" name="fidback-form__email" id="fidback-form__email" aria-label="Ваша почта для ответа?" placeholder="Ваша почта для ответа?" tabindex="0">
+      <textarea name="fidback-form__comment" rows="7" aria-label="Здесь вы можете оставить свой комментарий." placeholder="Напишите что нибудь..." tabindex="0"></textarea>
+      <button type="submit"  value="Отправить" aria-label="Отправить вашу форму" tabindex="0">Отправить</button>
+      <button type="button" name="fidback-form__close-pupap" aria-label="Закрыть форму обратной связи" tabindex="0"></button>
+    </fieldset>
+<!-- стоит ли для формы прописывать и aria-label и текст в label????? -->
+  </article>
 </body>
 
 </html>
